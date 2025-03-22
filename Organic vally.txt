@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Delights - From Nature to You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-green-100 to-yellow-100 font-inter">
+    <header class="bg-white/80 backdrop-blur-md py-4 px-6 rounded-b-xl shadow-md sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-semibold text-green-700">
+                <img src="https://placehold.co/50x50/EEE/333?text=Logo&font=Roboto" alt="Dairy Delights Logo" class="inline-block mr-2 rounded-full">
+                <span class="align-middle">Dairy Delights</span>
+            </a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#products" class="text-gray-700 hover:text-green-600 transition duration-300">Our Products</a></li>
+                    <li><a href="#process" class="text-gray-700 hover:text-green-600 transition duration-300">Our Process</a></li>
+                    <li><a href="#sustainability" class="text-gray-700 hover:text-green-600 transition duration-300">Sustainability</a></li>
+                    <li><a href="#recipes" class="text-gray-700 hover:text-green-600 transition duration-300">Recipes</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-green-600 transition duration-300">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900/90 z-20">
+        <div class="bg-white w-80 h-full absolute right-0 p-6 rounded-l-xl shadow-lg">
+            <div class="flex justify-end mb-4">
+                <button id="mobile-menu-close" class="text-gray-700 focus:outline-none">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                     <li><a href="#products" class="block text-lg text-gray-700 hover:text-green-600 transition duration-300">Our Products</a></li>
+                    <li><a href="#process" class="block text-lg text-gray-700 hover:text-green-600 transition duration-300">Our Process</a></li>
+                    <li><a href="#sustainability" class="block text-lg text-gray-700 hover:text-green-600 transition duration-300">Sustainability</a></li>
+                    <li><a href="#recipes" class="block text-lg text-gray-700 hover:text-green-600 transition duration-300">Recipes</a></li>
+                    <li><a href="#contact" class="block text-lg text-gray-700 hover:text-green-600 transition duration-300">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <section class="bg-gradient-to-br from-yellow-50 to-green-50 text-gray-800 py-20 px-6 rounded-xl shadow-lg mx-auto mt-8 max-w-7xl">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl font-semibold mb-4">Nature's Goodness, Delivered Daily</h1>
+                <p class="text-lg mb-8">Experience the纯粹的taste of our premium milk products, sourced directly from local farms and crafted with care.</p>
+                <button onclick="window.location.href='#products'" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">Explore Our Products</button>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/600x400/EEE/333?text=Milk+Products&font=Roboto" alt="Milk Products" class="rounded-xl shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-semibold text-green-700 text-center mb-12">Our Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-md p-6 flex flex-col justify-between">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Fresh Milk</h3>
+                <p class="text-gray-600 mb-4">Rich, creamy, and full of natural goodness.  Available in various sizes.</p>
+                <img src="https://placehold.co/400x300/EEE/333?text=Fresh+Milk&font=Roboto" alt="Fresh Milk" class="rounded-md mb-4">
+                <button class="bg-green-400 hover:bg-green-500 text-white font-semibold py-2.5 px-5 rounded-full transition duration-300 self-start">Learn More</button>
+            </div>
+            <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-md p-6 flex flex-col justify-between">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Yogurt</h3>
+                <p class="text-gray-600 mb-4">Smooth, delicious, and packed with probiotics.  Available in various flavors.</p>
+                 <img src="https://placehold.co/400x300/EEE/333?text=Yogurt&font=Roboto" alt="Yogurt" class="rounded-md mb-4">
+                <button class="bg-green-400 hover:bg-green-500 text-white font-semibold py-2.5 px-5 rounded-full transition duration-300 self-start">Learn More</button>
+            </div>
+            <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-md p-6 flex flex-col justify-between">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Cheese</h3>
+                <p class="text-gray-600 mb-4">From mild to sharp, our cheeses are crafted for the discerning palate.</p>
+                <img src="https://placehold.co/400x300/EEE/333?text=Cheese&font=Roboto" alt="Cheese" class="rounded-md mb-4">
+                <button class="bg-green-400 hover:bg-green-500 text-white font-semibold py-2.5 px-5 rounded-full transition duration-300 self-start">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="bg-gradient-to-br from-green-50 to-yellow-50 py-16 px-6 rounded-xl shadow-lg mx-auto mt-8 max-w-7xl">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-green-700 text-center mb-12">Our Process: From Farm to Table</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-gray-700 text-lg mb-6">
+                        We believe in quality every step of the way.  Our milk comes from healthy, happy cows on local farms.
+                    </p>
+                    <p class="text-gray-700 text-lg mb-6">
+                        We use sustainable practices to ensure the health of our land and the well-being of our animals.
+                    </p>
+                    <p class="text-gray-700 text-lg">
+                       Our state-of-the-art facilities ensure that our products are processed and packaged with the utmost care, preserving their natural goodness and flavor.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/EEE/333?text=Farm+to+Table&font=Roboto" alt="Farm to Table Process" class="rounded-xl shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustainability" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-semibold text-green-700 text-center mb-12">Sustainability: Caring for Our Planet</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <img src="https://placehold.co/600x400/EEE/333?text=Sustainability&font=Roboto" alt="Sustainability Efforts" class="rounded-xl shadow-md">
+            </div>
+            <div>
+                <ul class="list-disc list-inside space-y-4 text-gray-700 text-lg">
+                    <li>Reducing our carbon footprint through efficient energy use.</li>
+                    <li>Supporting local farmers and their communities.</li>
+                    <li>Using eco-friendly packaging materials.</li>
+                    <li>Promoting responsible waste management and recycling.</li>
+                    <li>Investing in renewable energy sources.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recipes" class="bg-gradient-to-br from-yellow-50 to-green-50 py-16 px-6 rounded-xl shadow-lg mx-auto mt-8 max-w-7xl">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-green-700 text-center mb-12">Delicious Recipes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Creamy Milkshake</h3>
+                    <p class="text-gray-600 mb-4">A classic treat made with our fresh milk and your favorite flavors.</p>
+                     <img src="https://placehold.co/400x300/EEE/333?text=Milkshake&font=Roboto" alt="Creamy Milkshake" class="rounded-md mb-4">
+                    <a href="#" class="text-green-500 hover:text-green-600 transition duration-300 font-semibold">View Recipe</a>
+                </div>
+                <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Homemade Yogurt Parfait</h3>
+                    <p class="text-gray-600 mb-4">Start your day with a healthy and delicious yogurt parfait.</p>
+                    <img src="https://placehold.co/400x300/EEE/333?text=Yogurt+Parfait&font=Roboto" alt="Homemade Yogurt Parfait" class="rounded-md mb-4">
+                    <a href="#" class="text-green-500 hover:text-green-600 transition duration-300 font-semibold">View Recipe</a>
+                </div>
+                <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Cheesy Baked Pasta</h3>
+                    <p class="text-gray-600 mb-4">Our cheese adds a rich and creamy touch to this comforting dish.</p>
+                    <img src="https://placehold.co/400x300/EEE/333?text=Cheesy+Pasta&font=Roboto" alt="Cheesy Baked Pasta" class="rounded-md mb-4">
+                    <a href="#" class="text-green-500 hover:text-green-600 transition duration-300 font-semibold">View Recipe</a>
+                </div>
+            </div>
+             <div class="mt-12 text-center">
+                <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300 text-lg">See All Recipes</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-semibold text-green-700 text-center mb-12">Contact Us</h2>
+        <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-md p-8 md:p-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-700 text-lg mb-6">
+                        Get in touch with us for any inquiries, feedback, or partnership opportunities.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.8-6.75 11.25-6.75 11.25S5.25 18.3 5.25 10.5 8.4375 3 12 3s6.75 7.5 6.75 7.5z" />
+                            </svg>
+                            <span class="text-gray-700">Address: 123 Nature's Way, Green Valley, CA 12345</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5m-7.5-7.5v1.5m0 6v1.5" />
+                            </svg>
+                            <span class="text-gray-700">Phone: +1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V15M1.5 6.75v10.5a.75.75 0 00.75.75h1.5a.75.75 0 00.75-.75V15m16.5-8.25v9.75a.75.75 0 00.75.75h1.5a.75.75 0 00.75-.75V8.25m-16.5.75v8.25a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V9h.75a.75.75 0 00.75-.75z" />
+                            </svg>
+                            <span class="text-gray-700">Fax: +1 (555) 987-6543</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75V15m-15 3.75a1.5 1.5 0 01-1.5-1.5h-.75a.75.75 0 00-.75.75v.75a.75.75 0 00.75.75h.75a1.5 1.5 0 011.5-1.5zm6-1.5a1.5 1.5 0 01-1.5-1.5h-.75a.75.75 0 00-.75.75v.75a.75.75 0 00.75.75h.75a1.5 1.5 0 011.5-1.5zm6-1.5a1.5 1.5 0 01-1.5-1.5h-.75a.75.75 0 00-.75.75v.75a.75.75 0 00.75.75h.75a1.5 1.5 0 011.5-1.5z" />
+                            </svg>
+                            <span class="text-gray-700">Email: info@dairydelights.com</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12s-1.007-3-2.25-3S16.5 10.343 16.5 12z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 19.125a7.142 7.142 0 006-6.375M12 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span class="text-gray-700">Website: www.dairydelights.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                            <input type="text" id="name" placeholder="Your Name" class="shadow appearance-none border rounded-md w-full py-2.5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email</label>
+                            <input type="email" id="email" placeholder="Your Email" class="shadow appearance-none border rounded-md w-full py-2.5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message</label>
+                            <textarea id="message" placeholder="Your Message" class="shadow appearance-none border rounded-md w-full py-2.5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300 w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white/80 backdrop-blur-md py-4 px-6 rounded-t-xl shadow-md">
+        <div class="container mx-auto text-center text-gray-700">
+            &copy; 2024 Dairy Delights. All rights reserved.  |  <a href="#" class="text-green-500 hover:text-green-600 transition duration-300">Privacy Policy</a>  |  <a href="#" class="text-green-500 hover:text-green-600 transition duration-300">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+        mobileMenuClose.addEventListener('click', toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== mobileMenuButton) {
+                toggleMobileMenu();
+            }
+        });
+
+       function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
